@@ -9,7 +9,7 @@ namespace Crypto
     static public class VigenereCipher
     {
         static char[,] _table = new char[25, 25];
-        static string _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        static readonly string _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public static string key { set; get; } = "KEYWORD";
        
 
