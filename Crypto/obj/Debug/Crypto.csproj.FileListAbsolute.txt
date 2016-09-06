@@ -1,0 +1,10 @@
+c:\users\andrew\documents\visual studio 2015\Projects\TestCipher\Crypto\bin\Debug\Crypto.dll
+c:\users\andrew\documents\visual studio 2015\Projects\TestCipher\Crypto\bin\Debug\Crypto.pdb
+c:\users\andrew\documents\visual studio 2015\Projects\TestCipher\Crypto\obj\Debug\Crypto.csprojResolveAssemblyReference.cache
+c:\users\andrew\documents\visual studio 2015\Projects\TestCipher\Crypto\obj\Debug\Crypto.dll
+c:\users\andrew\documents\visual studio 2015\Projects\TestCipher\Crypto\obj\Debug\Crypto.pdb
+C:\Users\Andrew\Documents\GitHub\Crypto\Crypto\bin\Debug\Crypto.dll
+C:\Users\Andrew\Documents\GitHub\Crypto\Crypto\bin\Debug\Crypto.pdb
+C:\Users\Andrew\Documents\GitHub\Crypto\Crypto\obj\Debug\Crypto.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\GitHub\Crypto\Crypto\obj\Debug\Crypto.dll
+C:\Users\Andrew\Documents\GitHub\Crypto\Crypto\obj\Debug\Crypto.pdb
