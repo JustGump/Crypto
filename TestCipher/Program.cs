@@ -12,9 +12,10 @@ namespace TestCipher
         static void Main(string[] args)
         {
             //VigenereCipher.ShowTable();
-            VigenereCipher.DecryptString("asd");
             
+            string a = VigenereCipher.CreateKey("hey", "MyNameIsJephh");
 
+            Console.WriteLine(a);
             //DECLINE
             Console.ReadLine();
         }

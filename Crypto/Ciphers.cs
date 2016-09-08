@@ -8,17 +8,17 @@ namespace Crypto
 {
     static public class VigenereCipher
     {
-        static char[,] _table = new char[25, 25];
+        static char[,] _table;
         static readonly string _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        public static string key { set; get; } = "KEYWORD";
+        public static string keyword { set; get; } = "KEYWORD";
        
-
         static VigenereCipher()
         {
             CreateTable();
         }
         static void CreateTable()
         {
+            _table = new char[25, 25];
             int shift = 0;
 
             for (int i = 0; i < 25; i++)
@@ -43,6 +43,24 @@ namespace Crypto
             }
         } 
 
+        public static string CreateKey(string keyword, string str) //!!!
+        {
+            int shift = 0;
+            
+            do
+            {
+
+                keyword += keyword[shift];
+                shift++;
+
+            } while (keyword.Length < str.Length);
+
+
+            return keyword;
+
+            
+        }
+
         public static string EncryptString(string str)
         {
             string result = str;
@@ -57,5 +75,9 @@ namespace Crypto
             string result = str;
             return "Dis shit decrypted! fck yeah";
         }
+
+
+
+
     }
 }
