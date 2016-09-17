@@ -11,11 +11,14 @@ namespace TestCipher
     {
         static void Main(string[] args)
         {
-            //VigenereCipher.ShowTable();
+            Console.Title = "Crypto";
+            string key = "IFJGUBNDIDMVBJFJVNDJCSUHHAHICUGUGSFUGSDYGSUFYG";
+            string str = "HELLO WORLD";
             
-            string a = VigenereCipher.CreateKey("hey", "MyNameIsJephh");
-
+            string a = VigenereCipher.EncryptString(str, key);
+            string b = VigenereCipher.DecryptString(a, key);
             Console.WriteLine(a);
+            Console.WriteLine(b);
             //DECLINE
             Console.ReadLine();
         }
