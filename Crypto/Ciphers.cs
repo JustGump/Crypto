@@ -12,6 +12,9 @@ namespace Crypto
 
         public static string EncryptString(string str, string key)
         {
+            str = str.ToUpper();
+            key = key.ToUpper();
+
             string result = "";
             int key_indx = 0;
 
@@ -28,6 +31,9 @@ namespace Crypto
         }
         public static string DecryptString(string str, string key)
         {
+            str = str.ToUpper();
+            key = key.ToUpper();
+
             string result = "";
             int key_indx = 0;
 
@@ -36,9 +42,8 @@ namespace Crypto
                 int decrypted = (Array.IndexOf(_alphabet, item) - Array.IndexOf(_alphabet, key[key_indx]) + _alphabet.Length) % _alphabet.Length;
                 result += _alphabet[decrypted];
                 key_indx++;
-                if (key_indx + 1== key.Length) key_indx = 0;
+                if (key_indx == key.Length) key_indx = 0;
             }
-
 
             return result;
         }

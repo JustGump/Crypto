@@ -12,13 +12,18 @@ namespace TestCipher
         static void Main(string[] args)
         {
             Console.Title = "Crypto";
-            string key = "IFJGUBNDIDMVBJFJVNDJCSUHHAHICUGUGSFUGSDYGSUFYG";
-            string str = "HELLO WORLD";
+
+            string str = "Hello My name is andrew how is the bissnes";
+            string key = "cvn";
             
-            string a = VigenereCipher.EncryptString(str, key);
-            string b = VigenereCipher.DecryptString(a, key);
+           
+
+           string a = VigenereCipher.EncryptString(str, key);
+           string b = VigenereCipher.DecryptString(a, key);
+
             Console.WriteLine(a);
             Console.WriteLine(b);
+
             //DECLINE
             Console.ReadLine();
         }
