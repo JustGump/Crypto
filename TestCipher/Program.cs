@@ -13,7 +13,7 @@ namespace TestCipher
         {
             Console.Title = "Crypto";
 
-            string str = "Hello My name is andrew how is the bissnes";
+            string str = "Hello user 05791135! nice to see YOU again here, how is your day?";
             string key = "cvn";
             
            
