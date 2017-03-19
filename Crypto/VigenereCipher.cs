@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Crypto
 {
-    static public class VigenereCipher
+    public static class VigenereCipher
     {
         static readonly char[] _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ".ToCharArray(); 
 

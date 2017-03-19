@@ -11,19 +11,11 @@ namespace TestCipher
     {
         static void Main(string[] args)
         {
-            Console.Title = "Crypto";
-
-            string str = "Hello My name is andrew how is the bissnes";
-            string key = "cvn";
-            
+            int[] keys = new[] {10, 20, 30};
+            string str =  FeistelCipher.Encrypt("Hello My Name Is Andrew!", keys);
            
-
-           string a = VigenereCipher.EncryptString(str, key);
-           string b = VigenereCipher.DecryptString(a, key);
-
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-
+            Console.WriteLine("Encrypt: "+ str);
+            Console.WriteLine("Decrypt: "+ FeistelCipher.Decrypt(str, keys));
             //DECLINE
             Console.ReadLine();
         }
